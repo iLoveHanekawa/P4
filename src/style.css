@@ -1,0 +1,68 @@
+* {
+    margin: 0;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+}
+
+.ReactFactsHeader {
+    color: #00D8FF;
+}
+
+.ReactLogo {
+    width: 40px;
+}
+
+.MainReactLogo {
+    width: 200px;
+    align-self: center;
+    opacity: 0.1;
+    /* clip-path: polygon(0% 0%, 50% 0%, 50% 100%, 0% 100%); */
+}
+
+.LeftSection {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.NavBar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 20px;
+}
+
+.MainHeader {
+    padding: 50px 20px;
+}
+
+.MainUl {
+    padding: 0px 70px;
+    list-style: none;
+}
+
+.FlexContainer {
+    display: flex;
+    justify-content: space-between;
+    height: 30vh;
+    align-items: center;
+}
+
+.Main {
+    background-color: #303030;
+    height: 100vh;
+}
+
+.MainUl > li {
+    padding: 10px;
+}
+
+.MainUl > li::before {
+    content: "\2022";
+    margin-right: 20px;
+    color: #00D8FF;
+    font-size: 170%;
+    align-self: center;
+}
