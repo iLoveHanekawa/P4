@@ -31,6 +31,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    position: relative;
     padding: 20px 20px;
 }
 
@@ -51,7 +52,6 @@ body {
 }
 
 .Main {
-    background-color: #303030;
     height: 100vh;
 }
 
@@ -65,4 +65,27 @@ body {
     color: #00D8FF;
     font-size: 170%;
     align-self: center;
+}
+
+.slider {
+    display: flex;
+    background-color: white;
+    width: 35px;
+    align-items: center;
+    height: 18px;
+    border-radius: 30px;
+}
+
+.sliderCircle {
+    background-color: black;
+    width: 17px;
+    height: 16px;
+    margin-left: 0.5px;
+    margin-right: 0.5px;
+    border-radius: 30px;
+}
+
+.rightSection {
+    display: flex;
+    gap: 20px;
 }

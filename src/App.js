@@ -4,8 +4,11 @@ import NavBar from "./components/NavBar"
 
 
 export default function App() {
+
+    const [isDark, setIsDark] = React.useState(true)
+
     return <div>
-        <NavBar/>
-        <Main/>
+        <NavBar isDark = {isDark} setIsDark = {setIsDark}/>
+        <Main isDark = {isDark}/>
     </div>
 }

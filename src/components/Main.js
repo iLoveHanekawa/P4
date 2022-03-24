@@ -1,11 +1,17 @@
 import React from "react"
 import ReactLogo from "../images/logoHalf.png"
 
-export default function Main() {
-    return <div className = "Main">
-        <h1 className="MainHeader">Fun Facts about React</h1>
-        <div className = "FlexContainer">
-            <ul className="MainUl">
+export default function Main(props) {
+    return <div className = "Main" style = {{
+        backgroundColor: props.isDark? "#303030": "white"
+    }}>
+        <h1 style = {{
+                color: props.isDark? "white": "black"
+            }} className="MainHeader">Fun Facts about React</h1>
+        <div className = "FlexContainer" style = {{
+                color: props.isDark? "white": "black"
+            }}>
+            <ul className="MainUl" >
                 <li>Was first released in 2013</li>
                 <li>Was originally created by Jordan Walke</li>
                 <li>Has well over 100K stars on Github</li>
